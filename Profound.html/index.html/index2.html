@@ -1,0 +1,103 @@
+
+<head>
+    <link rel="stylesheet" href="index2.css">
+   
+</head>
+
+<img src="https://www.profoundedutech.com/img/logo/profound-logo.png">
+
+<button class="open-button" onclick="openForm()">Open Form</button>
+<form action="action_page.php" class="form-popup" id="myForm">
+    
+    <div class="container">
+        
+      <h1 class="hp">Register</h1>
+      
+      <hr>
+  
+      <label for="registration"><b>registration No</b></label>
+      <input type="text" name="registration" id="registration" required>
+      <label for="Date"><b>Date</b></label>
+      <input type="Date" name="Date" id="Date" required>
+      <br><br>
+      <label for="Batch"><b>Batch Code</b></label>
+      <input type="text" name="Batch" id="Batch" required>
+  
+      <label for="EnquiryNo"><b>Enquiry No</b></label>
+      <input type="EnquiryNo" name="EnquiryNo" id="EnquiryNo" required>
+     
+      <label for="Branch"><b>Branch</b></label>
+      <input type="text" name="Branch" id="Branch" required>
+      <br><br>
+      <label for="CourseName"><b>Course Name</b></label>
+      <input type="text" name="Course" id="Course" required> 
+      <br><br>
+      <label for="Date"><b>Start date</b></label>
+      <input type="date" name="date" id="date" required>
+      <label for="times"><b>Time slot:form</b></label>
+      <input type="time" name="time" id="times" required>
+      <label for="times"><b>To</b></label>
+      <input type="time" name="time" id="times" required>
+      <br><br>
+      <label for="Name"><b>First Name</b></label>
+      <input type="text" name="name" id="name" required>
+      <br><br>
+      <label for="Name"><b>Middle Name</b></label>
+      <input type="text" name="name" id="name" required>
+      <br><br>
+      <label for="Name"><b>Last Name</b></label>
+      <input type="text" name="name" id="name" required>
+      <br><br>
+      <label for="date"><b>date of birth</b></label>
+      <input type="date" name="date" id="date" required>
+      <label for="Name"><b>Qualification</b></label>
+      <input type="text" name="name" id="name" required>
+      <br><br>
+      <label for="numbers"><b>percentage In 10th</b></label>
+      <input type="number" name="number" id="number" required>
+      <label for="numbers"><b>12th/Diploma</b></label>
+      <input type="number" name="number" id="number" required>
+      <label for="numbers"><b>Degree</b></label>
+      <input type="number" name="number" id="number" required>
+      <label for="numbers"><b>PG</b></label>
+      <input type="number" name="number" id="number" required>
+      <br>
+      <br>
+      <label for="Name"><b>College Name</b></label>
+      <input type="text" name="name" id="name" required>
+      <br>
+      <br>
+      <label for="Address"><b>Address for Correspondence</b></label>
+      <input type="text" name="Address" id="Address" required>
+      <br><br>
+      <label for="number"><b>Mobile No</b></label>
+      <input type="tel" name="telephone" id="telephone" required>
+      <br><br>
+      <label for="email"><b>Email</b></label>
+      <input type="email" name="email" id="email" required>
+      
+
+     
+      <hr>
+  
+      <p>By creating an account you agree to our <a href="#">Terms & Privacy</a>.</p>
+      <button type="submit" class="registerbtn">Register</button>
+    </div>
+  
+    <div class="container signin">
+      <p>Already have an account? <a href="#">Sign in</a>.</p>
+      <button type="submit"class="btn-cancel">Login</button>
+      <button type="button" class="btn-cancel" onclick="closeForm()">Close</button>
+      <button type="reset" class="btn-cancel" onclick="document.getElementById('myInput').value = ''">Reset Form</Form></button>
+
+    </div>
+  </form>
+  <script>
+    function openForm() {
+      document.getElementById("myForm").style.display = "block";
+    }
+    
+    function closeForm() {
+      document.getElementById("myForm").style.display = "none";
+    }
+    </script>
